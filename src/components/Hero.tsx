@@ -76,8 +76,8 @@ const Hero = () => {
             </Link>
           </div>
           
-          {/* Floating Dashboard */}
-          <div className="relative w-full max-w-5xl mx-auto animate-fade-up opacity-0 animation-delay-300">
+          {/* Floating Dashboard - Fixed positioning to ensure it stays visible */}
+          <div className="relative w-full max-w-5xl mx-auto animate-fade-up opacity-0 animation-delay-300 transform transition-all duration-700">
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-flux-100 rounded-full opacity-60 blur-xl"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-flux-200 rounded-full opacity-50 blur-xl"></div>
             

@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -39,7 +40,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">1. Discover</h3>
                 <p className="text-gray-600">
-                  We analyze your business processes and identify automation opportunities.
+                  We analyse your business processes and identify automation opportunities.
                 </p>
               </div>
               <div className="text-center">
@@ -64,7 +65,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-flux-100 rounded-full flex items-center justify-center text-flux-800 mx-auto mb-4">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">4. Optimize</h3>
+                <h3 className="text-xl font-semibold mb-2">4. Optimise</h3>
                 <p className="text-gray-600">
                   We continuously refine your automation for maximum efficiency and ROI.
                 </p>
