@@ -28,6 +28,17 @@ const Hero = () => {
     return () => document.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  // Add this useEffect to ensure the dashboard becomes visible after animation
+  useEffect(() => {
+    const dashboard = document.querySelector('.dashboard-element');
+    if (dashboard) {
+      setTimeout(() => {
+        (dashboard as HTMLElement).classList.remove('opacity-0');
+        (dashboard as HTMLElement).classList.add('opacity-100');
+      }, 600); // Slightly longer than the animation delay
+    }
+  }, []);
+
   return (
     <div 
       ref={heroRef}
@@ -76,8 +87,8 @@ const Hero = () => {
             </Link>
           </div>
           
-          {/* Floating Dashboard - Fixed positioning to ensure it stays visible */}
-          <div className="relative w-full max-w-5xl mx-auto animate-fade-up opacity-0 animation-delay-300 transform transition-all duration-700">
+          {/* Floating Dashboard - Using transition classes to ensure it stays visible */}
+          <div className="dashboard-element relative w-full max-w-5xl mx-auto animate-fade-up opacity-0 transition-opacity duration-1000">
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-flux-100 rounded-full opacity-60 blur-xl"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-flux-200 rounded-full opacity-50 blur-xl"></div>
             
