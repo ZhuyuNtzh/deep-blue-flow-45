@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollAnimation from '@/components/ScrollAnimation';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart, Clock, DollarSign, Users, Briefcase } from 'lucide-react';
 
@@ -100,14 +101,16 @@ const CaseStudies = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-                Real Results with AI Automation
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 text-balance">
-                See how we've helped small businesses transform their operations and boost their bottom line
-              </p>
-            </div>
+            <ScrollAnimation animation="fade-in">
+              <div className="max-w-3xl mx-auto text-center">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+                  Real Results with AI Automation
+                </h1>
+                <p className="text-xl text-gray-600 mb-8 text-balance">
+                  See how we've helped small businesses transform their operations and boost their bottom line
+                </p>
+              </div>
+            </ScrollAnimation>
           </div>
         </section>
 
@@ -116,7 +119,7 @@ const CaseStudies = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="space-y-16">
               {caseStudies.map((study, index) => (
-                <div key={study.id} className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+                <ScrollAnimation key={study.id} animation={index % 2 === 0 ? "fade-right" : "fade-left"} className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
                   <div className="md:flex">
                     <div className="md:w-1/3 p-6 md:p-8 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200">
                       <div className={`${study.color} w-12 h-12 rounded-full flex items-center justify-center text-white mb-4`}>
@@ -166,7 +169,7 @@ const CaseStudies = () => {
                       
                       <div className="mt-8">
                         <Link
-                          to="/book-call"
+                          to="/book-demo"
                           className="inline-flex items-center px-5 py-2 rounded-lg bg-flux-800 text-white text-sm font-medium hover:bg-flux-700 transition-all duration-300 shadow-sm button-hover-effect"
                         >
                           Discuss Your Project <ArrowRight className="ml-2 w-4 h-4" />
@@ -174,7 +177,7 @@ const CaseStudies = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </ScrollAnimation>
               ))}
             </div>
           </div>
@@ -183,28 +186,30 @@ const CaseStudies = () => {
         {/* CTA Section */}
         <section className="py-16 bg-flux-900 text-white">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-                Ready to become our next success story?
-              </h2>
-              <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
-                Book a free discovery call to explore how AI automation can transform your business.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/book-call"
-                  className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
-                >
-                  Book Your Free Call
-                </Link>
-                <Link
-                  to="/services"
-                  className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
-                >
-                  Explore Our Services <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
+            <ScrollAnimation animation="fade-in">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
+                  Ready to become our next success story?
+                </h2>
+                <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
+                  Book a free discovery demo to explore how AI automation can transform your business.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    to="/book-demo"
+                    className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
+                  >
+                    Book Your Free Demo
+                  </Link>
+                  <Link
+                    to="/services"
+                    className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
+                  >
+                    Explore Our Services <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </section>
       </main>
