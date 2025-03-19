@@ -13,16 +13,14 @@ const Pricing = () => {
 
   const pricingPlans = [
     {
-      title: "Automation Strategy",
-      description: "Professional consultation and planning",
-      price: "£2,900",
+      title: "AI Content Creation Assistant",
+      description: "Monthly subscription with no upfront costs",
+      price: "£150",
       features: [
-        "Process audit and analysis",
-        "Automation opportunity mapping",
-        "ROI calculation",
-        "Software recommendations",
-        "Implementation roadmap",
-        "2 weeks of email support"
+        "Powerful GPT-driven AI that learns your unique tone of voice",
+        "Automatically generates blog posts, emails, website content, and marketing copy",
+        "Saves thousands on hiring copywriters while maintaining brand consistency",
+        "Seamless integration with your existing content workflows"
       ],
       ctaText: "Get Started",
       ctaLink: "/book-call",

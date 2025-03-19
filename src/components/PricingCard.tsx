@@ -43,7 +43,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <p className="text-gray-500 mb-4">{description}</p>
         <div className="mb-4 flex items-end">
           <span className="text-3xl font-bold">{price}</span>
-          <span className="text-gray-500 ml-1">{price !== 'Custom' && '/project'}</span>
+          <span className="text-gray-500 ml-1">
+            {title === "AI Content Creation Assistant" 
+              ? "/month" 
+              : price !== 'Custom' ? '/project' : ''}
+          </span>
         </div>
         <Link
           to={ctaLink}
