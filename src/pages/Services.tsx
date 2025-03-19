@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import { Link } from 'react-router-dom';
-import { Workflow, MessageSquare, Bot, BarChart3, GitMerge, Zap, ArrowRight, Check } from 'lucide-react';
+import { MessageSquare, ArrowRight, Check, FileEdit, Database, Target, Share2, Shield } from 'lucide-react';
 
 const Services = () => {
   useEffect(() => {
@@ -13,87 +13,68 @@ const Services = () => {
 
   const services = [
     {
-      id: 'workflow',
-      title: 'AI-Driven Workflow Automation',
-      description: 'Eliminate repetitive tasks and streamline processes with intelligent workflows that adapt to your business needs.',
-      icon: Workflow,
+      id: 'content',
+      title: 'AI Content Creation Assistant',
+      description: 'A powerful GPT-driven AI that learns your unique tone of voice and creates compelling content for all your business needs.',
+      icon: FileEdit,
       color: 'bg-blue-500',
       benefits: [
-        'Reduce manual data entry by up to 90%',
-        'Automate document processing and approvals',
-        'Create conditional workflows that adapt to different scenarios',
-        'Integrate with your existing tools and software',
-        'Free up your team to focus on high-value work'
+        'A powerful GPT-driven AI that learns your unique tone of voice',
+        'Automatically generates blog posts, emails, website content, and marketing copy',
+        'Saves thousands on hiring copywriters while maintaining brand consistency',
+        'Seamless integration with your existing content workflows'
       ]
     },
     {
-      id: 'crm',
-      title: 'CRM & Marketing Automation',
-      description: 'Build stronger customer relationships and generate more leads with AI-powered marketing automation.',
-      icon: MessageSquare,
+      id: 'knowledge',
+      title: 'AI-Powered Knowledge Base & Digital Business Card',
+      description: 'A smart AI-driven repository containing everything about your company, acting as an interactive business card that answers questions instantly.',
+      icon: Database,
       color: 'bg-purple-500',
       benefits: [
-        'Automate lead nurturing and follow-ups',
-        'Segment customers based on behavior patterns',
-        'Personalize communications at scale',
-        'Optimize email campaigns with AI-driven timing',
-        'Track and analyze customer engagement automatically'
+        'A smart AI-driven repository containing everything about your company',
+        'Acts as a dynamic, interactive business card that answers sales and customer questions instantly',
+        'Helps prospects understand your products/services without human intervention',
+        'Reduces response time and boosts customer engagement'
       ]
     },
     {
-      id: 'chatbot',
-      title: 'AI Chatbot Integration',
-      description: 'Provide instant support and engage with customers 24/7 through intelligent conversational AI.',
-      icon: Bot,
+      id: 'leads',
+      title: 'AI-Generated Lead Creation',
+      description: 'Generate thousands of high-quality leads with verified business email addresses and AI-powered research on each company.',
+      icon: Target,
       color: 'bg-green-500',
       benefits: [
-        'Handle common customer inquiries automatically',
-        'Qualify leads before routing to sales teams',
-        'Provide instant responses at any time of day',
-        'Continuously improve with machine learning',
-        'Seamless handoff to human agents when needed'
+        'Generate thousands of high-quality leads with verified business email addresses',
+        'AI-powered research on each company to provide key insights and context',
+        'Ready-to-send, automated, and personalized email campaigns in just two clicks',
+        'A game-changer for sales teams looking to scale outreach effortlessly'
       ]
     },
     {
-      id: 'data',
-      title: 'Data-Driven Decision Making',
-      description: 'Transform your business data into actionable insights with AI-powered analytics and reporting.',
-      icon: BarChart3,
+      id: 'social',
+      title: 'Automated Social Media Management',
+      description: 'Instantly generate and schedule engaging social media posts with AI-created customized images and captions tailored to your brand.',
+      icon: Share2,
       color: 'bg-yellow-500',
       benefits: [
-        'Automated data collection and consolidation',
-        'Real-time dashboards and visualization',
-        'Predictive analytics to forecast trends',
-        'Anomaly detection to identify issues early',
-        'Automated reporting and insights delivery'
+        'Instantly generate and schedule engaging social media posts',
+        'AI creates customized images and captions tailored to your brand',
+        'Saves hours of manual work, ensuring a consistent online presence',
+        'Increases engagement and streamlines social media marketing'
       ]
     },
     {
-      id: 'process',
-      title: 'Process Optimization',
-      description: 'Identify inefficiencies and streamline operations with AI-powered process analysis and improvement.',
-      icon: GitMerge,
+      id: 'dashboard',
+      title: 'All-in-One Secure AI Dashboard',
+      description: 'A centralized, user-friendly dashboard accessible via secure login, combining all AI features into a single, easy-to-navigate interface.',
+      icon: Shield,
       color: 'bg-red-500',
       benefits: [
-        'Identify bottlenecks in your current workflows',
-        'Model process improvements before implementation',
-        'Automate complex multi-step processes',
-        'Measure and track performance improvements',
-        'Continuous optimization based on real data'
-      ]
-    },
-    {
-      id: 'custom',
-      title: 'Custom AI Solutions',
-      description: 'Tailored automation solutions designed specifically for your unique business challenges and goals.',
-      icon: Zap,
-      color: 'bg-indigo-500',
-      benefits: [
-        'Custom AI models trained on your business data',
-        'Bespoke solutions for industry-specific challenges',
-        'Integration with proprietary systems',
-        'Scalable architecture to grow with your business',
-        'Ongoing support and enhancement'
+        'A centralized, user-friendly dashboard accessible via secure login',
+        'Combines all AI features into a single, easy-to-navigate interface',
+        'Designed for business owners, marketers, and sales teams to boost efficiency',
+        'Ensures data security while offering a seamless automation experience'
       ]
     }
   ];
@@ -108,10 +89,10 @@ const Services = () => {
             <ScrollAnimation animation="fade-in">
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-                  AI Automation Services for Small Businesses
+                  Advanced AI Features for Your Business
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 text-balance">
-                  Our comprehensive suite of AI-powered automation solutions designed to streamline operations and boost growth
+                  Our comprehensive suite of AI-powered solutions designed to streamline operations and boost growth
                 </p>
               </div>
             </ScrollAnimation>
@@ -147,10 +128,10 @@ const Services = () => {
                     </div>
                     
                     <Link 
-                      to="/book-call"
+                      to="/book-demo"
                       className="inline-flex items-center px-5 py-3 rounded-lg bg-flux-800 text-white font-medium hover:bg-flux-700 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
                     >
-                      Book a Consultation <ArrowRight className="ml-2 w-4 h-4" />
+                      Book a Demo <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </div>
                   
@@ -165,12 +146,11 @@ const Services = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Case Example</h3>
                         <p className="text-gray-600 mb-4">
-                          {index === 0 && "A retail business reduced order processing time from 2 hours to 15 minutes with our workflow automation."}
-                          {index === 1 && "A service company increased customer retention by 35% through automated, personalised follow-ups."}
-                          {index === 2 && "An e-commerce store handled 78% of customer inquiries automatically, saving 30 hours per week."}
-                          {index === 3 && "A manufacturing firm identified £50,000 in annual savings using our data analysis automation."}
-                          {index === 4 && "A healthcare provider reduced administrative workload by 40% through process optimisation."}
-                          {index === 5 && "A specialised consulting firm automated client reporting, reducing preparation time by 85%."}
+                          {service.id === 'content' && "A marketing agency saved £4,000 monthly by using our AI Content Assistant instead of freelance writers."}
+                          {service.id === 'knowledge' && "An IT consulting firm increased sales conversion by 45% with our AI Knowledge Base answering prospect questions 24/7."}
+                          {service.id === 'leads' && "A SaaS startup generated 2,500 qualified leads in 3 weeks, resulting in 12 new enterprise clients."}
+                          {service.id === 'social' && "A small e-commerce business reduced social media management time from 15 hours to 2 hours weekly."}
+                          {service.id === 'dashboard' && "A professional services firm streamlined operations by 35% after implementing our AI Dashboard."}
                         </p>
                         <Link 
                           to="/case-studies"
@@ -193,14 +173,14 @@ const Services = () => {
             <ScrollAnimation animation="fade-in">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-                  Ready to automate your business?
+                  Ready to transform your business with AI?
                 </h2>
                 <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
                   Schedule a free 20-minute discovery demo to discuss your specific needs and challenges.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    to="/book-call"
+                    to="/book-demo"
                     className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
                   >
                     Book Your Free Demo
