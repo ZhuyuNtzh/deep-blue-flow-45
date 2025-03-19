@@ -119,7 +119,7 @@ const About = () => {
                   Empowering Businesses with AI-Driven Automation
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 text-balance">
-                  At Flux, we are redefining the way businesses operate. Our cutting-edge AI automation solutions eliminate repetitive tasks, enhance productivity, and streamline operations—allowing teams to focus on what truly matters.
+                  At AutomateX, we are redefining the way businesses operate. Our cutting-edge AI automation solutions eliminate repetitive tasks, enhance productivity, and streamline operations—allowing teams to focus on what truly matters.
                 </p>
               </div>
             </ScrollAnimation>
@@ -144,7 +144,7 @@ const About = () => {
                 <ScrollAnimation animation="fade-left" className="md:w-1/2">
                   <h2 className="text-3xl font-bold mb-4 text-balance">Our Story</h2>
                   <p className="text-gray-600 mb-4">
-                    Flux was founded with a clear vision: to make AI accessible, intuitive, and impactful for businesses of all sizes. We recognised the growing frustration of companies struggling with inefficient workflows, slow response times, and resource-heavy processes.
+                    AutomateX was founded with a clear vision: to make AI accessible, intuitive, and impactful for businesses of all sizes. We recognised the growing frustration of companies struggling with inefficient workflows, slow response times, and resource-heavy processes.
                   </p>
                   <p className="text-gray-600 mb-4">
                     The solution? A fully integrated AI system that automates critical business functions while maintaining the personal touch that customers expect. Through innovation, expertise, and a relentless focus on results, we have built a suite of AI tools designed to transform the way businesses operate.
@@ -226,7 +226,7 @@ const About = () => {
                 <div className="text-center mb-8">
                   <h2 className="text-3xl font-bold mb-4">The Future of Business is AI-Powered</h2>
                   <p className="text-xl opacity-80 mb-6">
-                    At Flux, we don't just automate tasks—we transform the way businesses work. Whether you want to improve content creation, lead generation, or customer engagement, our AI solutions help you achieve more with less effort.
+                    At AutomateX, we don't just automate tasks—we transform the way businesses work. Whether you want to improve content creation, lead generation, or customer engagement, our AI solutions help you achieve more with less effort.
                   </p>
                   <p className="text-lg opacity-90 mb-8">
                     Ready to embrace the future of automation? Contact us today and discover how AI can revolutionise your business.
