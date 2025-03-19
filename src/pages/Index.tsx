@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -6,7 +5,7 @@ import Features from '@/components/Features';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Clock, Users, TrendingUp, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Clock, Users, TrendingUp, Zap, CheckCircle2 } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
