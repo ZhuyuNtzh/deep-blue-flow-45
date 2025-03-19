@@ -4,10 +4,11 @@ import React, { useEffect, useRef } from 'react';
 interface ScrollAnimationProps {
   children: React.ReactNode;
   className?: string;
-  animation?: 'fade-in' | 'fade-right' | 'fade-left' | 'scale';
+  animation?: 'fade-in' | 'fade-right' | 'fade-left' | 'scale' | 'fade-up';
   delay?: number;
   threshold?: number;
   rootMargin?: string;
+  id?: string;
 }
 
 const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
@@ -17,6 +18,7 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
   delay = 0,
   threshold = 0.1,
   rootMargin = '0px 0px -100px 0px',
+  id,
 }) => {
   const elementRef = useRef<HTMLDivElement>(null);
   
@@ -55,12 +57,13 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
       case 'fade-right': return 'scroll-fade-right';
       case 'fade-left': return 'scroll-fade-left';
       case 'scale': return 'scroll-scale';
+      case 'fade-up': return 'scroll-fade-in'; // Map fade-up to scroll-fade-in for now
       default: return 'scroll-fade-in';
     }
   };
   
   return (
-    <div ref={elementRef} className={`${getAnimationClass()} ${className}`} style={{ transitionDelay: `${delay}ms` }}>
+    <div ref={elementRef} id={id} className={`${getAnimationClass()} ${className}`} style={{ transitionDelay: `${delay}ms` }}>
       {children}
     </div>
   );
