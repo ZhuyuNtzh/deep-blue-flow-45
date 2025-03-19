@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -8,14 +7,11 @@ import Footer from '@/components/Footer';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, Users, TrendingUp, Zap, CheckCircle2 } from 'lucide-react';
-
 const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  return (
-    <>
+  return <>
       <Navbar />
       <main>
         <Hero />
@@ -140,20 +136,12 @@ const Index = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
                   Ready to transform your business with AI?
                 </h2>
-                <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
-                  Book a free 20-minute discovery demo to explore how AI automation can help your business grow.
-                </p>
+                <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">Book a free 30-minute discovery demo to explore how AI automation can help your business grow.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/book-call"
-                    className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
-                  >
+                  <Link to="/book-call" className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect">
                     Book Your Free Demo
                   </Link>
-                  <Link
-                    to="/newsletter"
-                    className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
-                  >
+                  <Link to="/newsletter" className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center">
                     Subscribe to Newsletter <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                 </div>
@@ -163,8 +151,6 @@ const Index = () => {
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Index;
