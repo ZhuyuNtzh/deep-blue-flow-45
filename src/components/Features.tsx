@@ -1,44 +1,38 @@
 
 import React from 'react';
-import { ArrowUpRight, MessageSquare, Workflow, BarChart3, GitMerge, Zap, Bot } from 'lucide-react';
+import { ArrowUpRight, FileEdit, Database, Target, Share2, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const features = [
   {
-    title: 'AI-Driven Workflow Automation',
-    description: 'Streamline repetitive tasks and processes with intelligent workflow automation that learns from your business.',
-    icon: Workflow,
+    title: 'AI Content Creation Assistant',
+    description: 'A powerful GPT-driven AI that learns your unique tone of voice and creates compelling content for all your business needs.',
+    icon: FileEdit,
     color: 'bg-blue-500',
   },
   {
-    title: 'CRM & Marketing Automation',
-    description: 'Enhance customer relationships and marketing effectiveness with automated engagement strategies.',
-    icon: MessageSquare,
+    title: 'AI-Powered Knowledge Base & Digital Business Card',
+    description: 'A smart AI-driven repository containing everything about your company, acting as an interactive business card that answers questions instantly.',
+    icon: Database,
     color: 'bg-purple-500',
   },
   {
-    title: 'AI Chatbot Integration',
-    description: 'Provide 24/7 customer support and streamline inquiries with intelligent conversational AI.',
-    icon: Bot,
+    title: 'AI-Generated Lead Creation',
+    description: 'Generate thousands of high-quality leads with verified business email addresses and AI-powered research on each company.',
+    icon: Target,
     color: 'bg-green-500',
   },
   {
-    title: 'Data-Driven Decision Making',
-    description: 'Transform raw data into actionable insights to guide strategic business decisions.',
-    icon: BarChart3,
+    title: 'Automated Social Media Management',
+    description: 'Instantly generate and schedule engaging social media posts with AI-created customized images and captions tailored to your brand.',
+    icon: Share2,
     color: 'bg-yellow-500',
   },
   {
-    title: 'Process Optimization',
-    description: 'Identify bottlenecks and inefficiencies in your operations with AI-powered process analysis.',
-    icon: GitMerge,
+    title: 'All-in-One Secure AI Dashboard',
+    description: 'A centralized, user-friendly dashboard accessible via secure login, combining all AI features into a single, easy-to-navigate interface.',
+    icon: Shield,
     color: 'bg-red-500',
-  },
-  {
-    title: 'Custom AI Solutions',
-    description: 'Tailored automation solutions designed specifically for your unique business challenges.',
-    icon: Zap,
-    color: 'bg-indigo-500',
   },
 ];
 
