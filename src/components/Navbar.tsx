@@ -74,7 +74,7 @@ const Navbar = () => {
               to="/book-call"
               className="ml-4 px-4 py-2 rounded-md bg-flux-800 text-white text-sm font-medium transition-all duration-200 hover:bg-flux-700 button-hover-effect"
             >
-              Book a Call
+              Book a Demo
             </Link>
           </nav>
 
@@ -113,7 +113,7 @@ const Navbar = () => {
                 to="/book-call"
                 className="block mt-2 px-4 py-3 rounded-md bg-flux-800 text-white text-sm font-medium text-center transition-all duration-200 hover:bg-flux-700"
               >
-                Book a Call
+                Book a Demo
               </Link>
             </div>
           </div>

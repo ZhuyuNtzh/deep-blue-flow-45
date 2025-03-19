@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollAnimation from '@/components/ScrollAnimation';
 import { Link } from 'react-router-dom';
 import { Workflow, MessageSquare, Bot, BarChart3, GitMerge, Zap, ArrowRight, Check } from 'lucide-react';
 
@@ -104,14 +105,16 @@ const Services = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-                AI Automation Services for Small Businesses
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 text-balance">
-                Our comprehensive suite of AI-powered automation solutions designed to streamline operations and boost growth
-              </p>
-            </div>
+            <ScrollAnimation animation="fade-in">
+              <div className="max-w-3xl mx-auto text-center">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+                  AI Automation Services for Small Businesses
+                </h1>
+                <p className="text-xl text-gray-600 mb-8 text-balance">
+                  Our comprehensive suite of AI-powered automation solutions designed to streamline operations and boost growth
+                </p>
+              </div>
+            </ScrollAnimation>
           </div>
         </section>
 
@@ -120,7 +123,12 @@ const Services = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="space-y-24">
               {services.map((service, index) => (
-                <div key={service.id} id={service.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <ScrollAnimation 
+                  key={service.id} 
+                  id={service.id} 
+                  animation={index % 2 === 0 ? "fade-right" : "fade-left"}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                >
                   <div className={index % 2 === 0 ? "order-1 lg:order-1" : "order-1 lg:order-2"}>
                     <div className={`${service.color} w-16 h-16 rounded-lg flex items-center justify-center text-white mb-6`}>
                       <service.icon className="w-8 h-8" />
@@ -158,11 +166,11 @@ const Services = () => {
                         <h3 className="text-xl font-semibold mb-2">Case Example</h3>
                         <p className="text-gray-600 mb-4">
                           {index === 0 && "A retail business reduced order processing time from 2 hours to 15 minutes with our workflow automation."}
-                          {index === 1 && "A service company increased customer retention by 35% through automated, personalized follow-ups."}
+                          {index === 1 && "A service company increased customer retention by 35% through automated, personalised follow-ups."}
                           {index === 2 && "An e-commerce store handled 78% of customer inquiries automatically, saving 30 hours per week."}
-                          {index === 3 && "A manufacturing firm identified $50,000 in annual savings using our data analysis automation."}
-                          {index === 4 && "A healthcare provider reduced administrative workload by 40% through process optimization."}
-                          {index === 5 && "A specialized consulting firm automated client reporting, reducing preparation time by 85%."}
+                          {index === 3 && "A manufacturing firm identified £50,000 in annual savings using our data analysis automation."}
+                          {index === 4 && "A healthcare provider reduced administrative workload by 40% through process optimisation."}
+                          {index === 5 && "A specialised consulting firm automated client reporting, reducing preparation time by 85%."}
                         </p>
                         <Link 
                           to="/case-studies"
@@ -173,7 +181,7 @@ const Services = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </ScrollAnimation>
               ))}
             </div>
           </div>
@@ -182,28 +190,30 @@ const Services = () => {
         {/* CTA Section */}
         <section className="py-16 bg-flux-900 text-white">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-                Ready to automate your business?
-              </h2>
-              <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
-                Schedule a free 20-minute discovery call to discuss your specific needs and challenges.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/book-call"
-                  className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
-                >
-                  Book Your Free Call
-                </Link>
-                <Link
-                  to="/pricing"
-                  className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
-                >
-                  View Pricing <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
+            <ScrollAnimation animation="fade-in">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
+                  Ready to automate your business?
+                </h2>
+                <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
+                  Schedule a free 20-minute discovery demo to discuss your specific needs and challenges.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    to="/book-call"
+                    className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
+                  >
+                    Book Your Free Demo
+                  </Link>
+                  <Link
+                    to="/pricing"
+                    className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
+                  >
+                    View Pricing <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </section>
       </main>
