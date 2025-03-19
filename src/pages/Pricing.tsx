@@ -45,19 +45,19 @@ const Pricing = () => {
       isPopular: true
     },
     {
-      title: "Ongoing Management",
-      description: "Continuous optimisation and support",
-      price: "£3,000",
+      title: "Customised Projects",
+      description: "Tailored solutions for specific needs",
+      price: "Call",
       features: [
-        "Annual AI automation review",
-        "Quarterly optimisation sessions",
-        "Continuous workflow improvements",
-        "AI model retraining",
-        "Priority technical support",
-        "Monthly performance reports",
-        "New feature implementation"
+        "Automated bulk email sending and intelligence",
+        "Bulk lead generation system",
+        "Full CRM implementation and integration",
+        "Custom AI model development",
+        "Enterprise-level data processing",
+        "Advanced analytics and reporting",
+        "Dedicated project manager"
       ],
-      ctaText: "Get Started",
+      ctaText: "Get Quote",
       ctaLink: "/book-call",
       isPopular: false
     }

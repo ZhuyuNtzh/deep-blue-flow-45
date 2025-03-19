@@ -46,7 +46,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           <span className="text-gray-500 ml-1">
             {title === "AI Content Creation Assistant" || title === "Built-out Projects" 
               ? "/month" 
-              : price !== 'Custom' ? '/project' : ''}
+              : price === "Call" ? " to get a quote" : price !== 'Custom' ? '/project' : ''}
           </span>
         </div>
         <Link
