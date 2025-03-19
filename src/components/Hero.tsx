@@ -46,74 +46,84 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="text-center lg:text-left">
-            <div className="mb-6 inline-flex items-center rounded-full bg-flux-50 px-3 py-1 text-sm font-medium text-flux-800 animate-fade-in">
-              <span className="flex h-2 w-2 rounded-full bg-flux-500 mr-2"></span>
-              AI-Powered Solutions for Small Businesses
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 animate-fade-up text-balance">
-              Boost Productivity & Profits with
-              <span className="text-gradient"> AI-Powered Automation</span>
-            </h1>
-            
-            <p className="text-xl text-gray-600 mb-8 lg:max-w-xl animate-fade-up opacity-0 animation-delay-100 text-balance">
-              We help small businesses scale smarter with AI and automation solutions tailored for efficiency.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up opacity-0 animation-delay-200">
-              <Link
-                to="/book-call"
-                className="px-6 py-3 rounded-lg bg-flux-800 text-white font-medium hover:bg-flux-700 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
-              >
-                Start Working Smarter
-              </Link>
-              <Link
-                to="/services"
-                className="px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
-              >
-                Our Services <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </div>
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          <div className="mb-6 inline-flex items-center rounded-full bg-flux-50 px-3 py-1 text-sm font-medium text-flux-800 animate-fade-in">
+            <span className="flex h-2 w-2 rounded-full bg-flux-500 mr-2"></span>
+            AI-Powered Solutions for Small Businesses
           </div>
           
-          <div className="hidden lg:block animate-fade-up opacity-0 animation-delay-300">
-            <div className="relative">
-              <div className="absolute -top-16 -right-16 w-32 h-32 bg-flux-100 rounded-full opacity-60 blur-xl"></div>
-              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-flux-200 rounded-full opacity-50 blur-xl"></div>
-              
-              <img 
-                src="/lovable-uploads/83456b95-a15e-433b-a37a-c7513d962bbb.png" 
-                alt="AI Automation Visualization" 
-                className="rounded-xl shadow-2xl relative z-10 border border-gray-200"
-              />
-            </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 animate-fade-up text-balance">
+            Boost Productivity & Profits with
+            <span className="text-gradient"> AI-Powered Automation</span>
+          </h1>
+          
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl animate-fade-up opacity-0 animation-delay-100 text-balance">
+            We help small businesses scale smarter with AI and automation solutions tailored for efficiency.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 animation-delay-200 mb-12">
+            <Link
+              to="/book-call"
+              className="px-6 py-3 rounded-lg bg-flux-800 text-white font-medium hover:bg-flux-700 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
+            >
+              Start Working Smarter
+            </Link>
+            <Link
+              to="/services"
+              className="px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
+            >
+              Our Services <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
-        </div>
-        
-        <div className="mt-16 relative lg:mt-24">
-          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent h-20 z-10 bottom-0"></div>
-          <div className="relative z-0 max-w-5xl mx-auto rounded-xl shadow-2xl overflow-hidden border border-gray-200 glass animate-fade-up opacity-0 animation-delay-300">
-            <div className="w-full h-[28rem] bg-gray-900 rounded-t-xl">
-              <div className="w-full h-8 bg-gray-800 flex items-center px-4">
+          
+          {/* Floating Dashboard */}
+          <div className="relative w-full max-w-5xl mx-auto animate-fade-up opacity-0 animation-delay-300">
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-flux-100 rounded-full opacity-60 blur-xl"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-flux-200 rounded-full opacity-50 blur-xl"></div>
+            
+            <div className="relative glass rounded-xl shadow-2xl border border-gray-200 overflow-hidden">
+              <div className="w-full bg-gray-800 h-8 flex items-center px-4">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
+                <div className="ml-4 text-xs text-gray-300 font-mono">AI Dashboard</div>
               </div>
-              <div className="p-6 h-full overflow-hidden bg-gray-900 text-gray-300 text-sm font-mono flex flex-col">
-                <div className="flex items-center mb-4">
-                  <span className="text-green-400">$</span>
-                  <span className="ml-2 animate-pulse-slow">automateX --workflow="customer_outreach" --execute</span>
+              
+              <div className="bg-gray-900 text-gray-300 p-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="bg-gray-800 p-4 rounded-lg">
+                    <h3 className="font-medium text-white mb-2">Task Automation</h3>
+                    <div className="h-2 bg-flux-700 rounded-full mb-2 relative overflow-hidden">
+                      <div className="absolute h-full w-3/4 bg-flux-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-400">75% complete</p>
+                  </div>
+                  
+                  <div className="bg-gray-800 p-4 rounded-lg">
+                    <h3 className="font-medium text-white mb-2">Customer Outreach</h3>
+                    <div className="h-2 bg-flux-700 rounded-full mb-2 relative overflow-hidden">
+                      <div className="absolute h-full w-1/2 bg-flux-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-400">50% optimised</p>
+                  </div>
+                  
+                  <div className="bg-gray-800 p-4 rounded-lg">
+                    <h3 className="font-medium text-white mb-2">Revenue Growth</h3>
+                    <div className="h-2 bg-flux-700 rounded-full mb-2 relative overflow-hidden">
+                      <div className="absolute h-full w-4/5 bg-flux-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-400">32% increase</p>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-blue-400">✓ Connecting to CRM</div>
-                  <div className="text-blue-400">✓ Identifying customer segments</div>
-                  <div className="text-blue-400">✓ Generating personalized messages</div>
-                  <div className="text-blue-400">✓ Scheduling follow-ups</div>
-                  <div className="text-green-400 mt-4">✓ Workflow automated successfully</div>
+                
+                <div className="mt-4 flex items-center">
+                  <div className="text-xs font-mono flex-1">
+                    <span className="text-green-400">$</span>
+                    <span className="ml-2 animate-pulse-slow">automateX --workflow="client_outreach" --optimise</span>
+                  </div>
+                  <div className="text-xs text-flux-400">System Active</div>
                 </div>
               </div>
             </div>
