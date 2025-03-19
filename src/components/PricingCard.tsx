@@ -44,7 +44,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <div className="mb-4 flex items-end">
           <span className="text-3xl font-bold">{price}</span>
           <span className="text-gray-500 ml-1">
-            {title === "AI Content Creation Assistant" 
+            {title === "AI Content Creation Assistant" || title === "Built-out Projects" 
               ? "/month" 
               : price !== 'Custom' ? '/project' : ''}
           </span>

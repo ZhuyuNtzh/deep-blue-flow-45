@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -28,16 +29,16 @@ const Pricing = () => {
     },
     {
       title: "Built-out Projects",
-      description: "Full implementation of automation solutions",
-      price: "£4,000",
+      description: "Monthly subscription, cancel anytime",
+      price: "£899",
       features: [
-        "Complete setup of automation tools",
-        "Workflow design and implementation",
-        "Integration with existing systems",
-        "Data migration (if needed)",
-        "Testing and quality assurance",
-        "Team training and documentation",
-        "30 days of post-launch support"
+        "AI Content Creation Assistant with personalized tone learning",
+        "AI-Powered Knowledge Base that answers customer questions instantly",
+        "AI-Generated Lead Creation with verified business emails",
+        "Automated Social Media Management with custom content",
+        "All-in-One Secure AI Dashboard for centralized access",
+        "24/7 technical support and regular updates",
+        "Initial setup and onboarding assistance"
       ],
       ctaText: "Get Started",
       ctaLink: "/book-call",
