@@ -47,11 +47,11 @@ const Pricing = () => {
     },
     {
       title: "Ongoing Management",
-      description: "Continuous optimization and support",
+      description: "Continuous optimisation and support",
       price: "£3,000",
       features: [
         "Annual AI automation review",
-        "Quarterly optimization sessions",
+        "Quarterly optimisation sessions",
         "Continuous workflow improvements",
         "AI model retraining",
         "Priority technical support",
@@ -83,7 +83,7 @@ const Pricing = () => {
     },
     {
       question: "Can you integrate with our existing software?",
-      answer: "Yes. We specialize in integrating automation solutions with popular business software. During the discovery phase, we'll assess your current tech stack and design automations that work seamlessly with your existing tools."
+      answer: "Yes. We specialise in integrating automation solutions with popular business software. During the discovery phase, we'll assess your current tech stack and design automations that work seamlessly with your existing tools."
     }
   ];
 
@@ -159,7 +159,7 @@ const Pricing = () => {
                   </div>
                   <div className="flex items-start">
                     <Check className="w-5 h-5 text-flux-600 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">White-labeled solutions</span>
+                    <span className="text-gray-700">White-labelled solutions</span>
                   </div>
                   <div className="flex items-start">
                     <Check className="w-5 h-5 text-flux-600 mr-2 flex-shrink-0 mt-0.5" />
