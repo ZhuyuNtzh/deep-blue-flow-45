@@ -3,24 +3,24 @@ import React from 'react';
 
 const testimonials = [
   {
-    quote: "Flux has completely transformed how we handle our data pipelines. What used to take days now happens in minutes.",
+    quote: "AutomateX transformed our customer service. Their AI chatbot handles 80% of inquiries automatically, and our team now focuses on complex cases only.",
     author: "Alex Chen",
-    role: "CTO at TechVision",
-    company: "TechVision",
+    role: "Operations Director",
+    company: "TechRetail",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
-    quote: "The intuitive interface combined with powerful capabilities makes Flux the perfect solution for our data needs.",
+    quote: "The marketing automation system they built has revolutionized our lead nurturing. We've seen a 35% increase in conversion rates in just two months.",
     author: "Samantha Williams",
-    role: "Head of Data at Innovate Inc",
-    company: "Innovate Inc",
+    role: "Marketing Manager",
+    company: "Innovate Services",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg"
   },
   {
-    quote: "We've cut our data processing costs by 40% while improving performance. Flux delivers exactly what it promises.",
+    quote: "I was skeptical about AI for our small business, but AutomateX delivered incredible ROI. We've cut administrative work by 40% while improving accuracy.",
     author: "Michael Johnson",
-    role: "Data Engineer",
-    company: "DataFlow Systems",
+    role: "Founder & CEO",
+    company: "Johnson Consulting",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   }
 ];
@@ -31,10 +31,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-            Trusted by data teams worldwide
+            What our clients say
           </h2>
           <p className="text-xl text-gray-600 text-balance">
-            See why leading companies choose Flux for their critical data workflows
+            Real businesses achieving real results with our AI automation solutions
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const Testimonials = () => {
                   />
                   <div>
                     <p className="font-medium text-gray-900">{testimonial.author}</p>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    <p className="text-sm text-gray-500">{testimonial.role}, {testimonial.company}</p>
                   </div>
                 </div>
               </div>

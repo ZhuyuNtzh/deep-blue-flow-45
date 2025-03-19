@@ -24,10 +24,11 @@ const Navbar = () => {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/features', label: 'Features' },
+    { href: '/services', label: 'Services' },
     { href: '/pricing', label: 'Pricing' },
+    { href: '/case-studies', label: 'Case Studies' },
     { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/newsletter', label: 'Newsletter' },
   ];
 
   return (
@@ -47,10 +48,10 @@ const Navbar = () => {
             className="text-2xl font-bold text-flux-900 transition-opacity duration-200 hover:opacity-80"
           >
             <span className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-md bg-gradient-to-br from-flux-700 to-flux-900 flex items-center justify-center text-white font-semibold text-sm">
-                Fx
+              <div className="h-8 w-8 rounded-md bg-gradient-to-br from-flux-800 to-flux-900 flex items-center justify-center text-white font-semibold text-sm">
+                AX
               </div>
-              Flux
+              AutomateX
             </span>
           </Link>
 
@@ -70,10 +71,10 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/book-call"
               className="ml-4 px-4 py-2 rounded-md bg-flux-800 text-white text-sm font-medium transition-all duration-200 hover:bg-flux-700 button-hover-effect"
             >
-              Get Started
+              Book a Call
             </Link>
           </nav>
 
@@ -109,10 +110,10 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                to="/contact"
+                to="/book-call"
                 className="block mt-2 px-4 py-3 rounded-md bg-flux-800 text-white text-sm font-medium text-center transition-all duration-200 hover:bg-flux-700"
               >
-                Get Started
+                Book a Call
               </Link>
             </div>
           </div>

@@ -4,69 +4,14 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Testimonials from '@/components/Testimonials';
-import PricingCard from '@/components/PricingCard';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-import { ArrowRight, LineChart, Shield, Zap, Database } from 'lucide-react';
+import { ArrowRight, Clock, Users, TrendingUp, CheckCircle2 } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const pricingPlans = [
-    {
-      title: "Starter",
-      description: "Perfect for individuals and small projects",
-      price: "$49",
-      features: [
-        "Up to 5 data sources",
-        "1 million rows per month",
-        "Daily data syncs",
-        "Standard support",
-        "Basic analytics",
-        "7 day data retention"
-      ],
-      ctaText: "Get Started",
-      ctaLink: "/contact",
-      isPopular: false
-    },
-    {
-      title: "Professional",
-      description: "Ideal for growing teams and businesses",
-      price: "$149",
-      features: [
-        "Up to 20 data sources",
-        "10 million rows per month",
-        "Hourly data syncs",
-        "Priority support",
-        "Advanced analytics",
-        "30 day data retention",
-        "Custom transformations"
-      ],
-      ctaText: "Get Started",
-      ctaLink: "/contact",
-      isPopular: true
-    },
-    {
-      title: "Enterprise",
-      description: "For organizations with advanced needs",
-      price: "Custom",
-      features: [
-        "Unlimited data sources",
-        "Customizable row limits",
-        "Real-time data syncs",
-        "Dedicated support",
-        "AI-powered analytics",
-        "Unlimited data retention",
-        "Advanced security features",
-        "Custom integrations"
-      ],
-      ctaText: "Contact Sales",
-      ctaLink: "/contact",
-      isPopular: false
-    }
-  ];
 
   return (
     <>
@@ -81,76 +26,85 @@ const Index = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-                How Flux works
+                How We Transform Your Business
               </h2>
               <p className="text-xl text-gray-600 text-balance">
-                A simple yet powerful workflow to handle all your data needs
+                Our proven approach to implementing AI automation for maximum impact
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
               <div className="text-center">
                 <div className="w-16 h-16 bg-flux-100 rounded-full flex items-center justify-center text-flux-800 mx-auto mb-4">
-                  <Database className="w-8 h-8" />
+                  <Users className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">1. Connect</h3>
+                <h3 className="text-xl font-semibold mb-2">1. Discover</h3>
                 <p className="text-gray-600">
-                  Connect to your data sources with our pre-built connectors and start ingesting data in minutes.
+                  We analyze your business processes and identify automation opportunities.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-flux-100 rounded-full flex items-center justify-center text-flux-800 mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">2. Design</h3>
+                <p className="text-gray-600">
+                  We create custom AI automation solutions tailored to your specific needs.
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-flux-100 rounded-full flex items-center justify-center text-flux-800 mx-auto mb-4">
                   <Zap className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">2. Transform</h3>
+                <h3 className="text-xl font-semibold mb-2">3. Implement</h3>
                 <p className="text-gray-600">
-                  Clean, validate, and transform your data with powerful yet simple transformation tools.
+                  We deploy and integrate AI automation tools seamlessly into your workflow.
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-flux-100 rounded-full flex items-center justify-center text-flux-800 mx-auto mb-4">
-                  <LineChart className="w-8 h-8" />
+                  <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">3. Analyze</h3>
+                <h3 className="text-xl font-semibold mb-2">4. Optimize</h3>
                 <p className="text-gray-600">
-                  Gain insights from your data with advanced analytics and visualization capabilities.
+                  We continuously refine your automation for maximum efficiency and ROI.
                 </p>
               </div>
             </div>
             
             <div className="text-center">
-              <Link to="/features" className="inline-flex items-center text-flux-700 font-medium hover:text-flux-800 transition-colors">
-                Learn more about our workflow <ArrowRight className="ml-1 w-4 h-4" />
+              <Link to="/services" className="inline-flex items-center text-flux-700 font-medium hover:text-flux-800 transition-colors">
+                Learn more about our approach <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </div>
           </div>
         </section>
         
-        {/* Pricing Section */}
-        <section id="pricing" className="py-20 bg-gray-50">
+        {/* Results Section */}
+        <section className="py-20 bg-flux-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-                Simple, transparent pricing
+                Real Results for Small Businesses
               </h2>
               <p className="text-xl text-gray-600 text-balance">
-                Choose the plan that's right for you
+                Our clients achieve significant improvements in efficiency and profitability
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {pricingPlans.map((plan, index) => (
-                <PricingCard 
-                  key={index}
-                  title={plan.title}
-                  description={plan.description}
-                  price={plan.price}
-                  features={plan.features}
-                  isPopular={plan.isPopular}
-                  ctaText={plan.ctaText}
-                  ctaLink={plan.ctaLink}
-                />
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-4xl font-bold text-flux-700 mb-2">40%</div>
+                <p className="text-gray-600">Average reduction in manual tasks</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-4xl font-bold text-flux-700 mb-2">3.5x</div>
+                <p className="text-gray-600">Increase in customer response speed</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md text-center">
+                <div className="text-4xl font-bold text-flux-700 mb-2">25%</div>
+                <p className="text-gray-600">Typical revenue growth in 6 months</p>
+              </div>
             </div>
           </div>
         </section>
@@ -162,23 +116,23 @@ const Index = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-                Ready to transform your data workflow?
+                Ready to transform your business with AI?
               </h2>
               <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto text-balance">
-                Join thousands of data teams who have streamlined their operations with Flux.
+                Book a free 20-minute discovery call to explore how AI automation can help your business grow.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/book-call"
                   className="px-6 py-3 rounded-lg bg-white text-flux-900 font-medium hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
                 >
-                  Get Started Free
+                  Book Your Free Call
                 </Link>
                 <Link
-                  to="/contact"
+                  to="/newsletter"
                   className="px-6 py-3 rounded-lg border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
                 >
-                  Contact Sales <ArrowRight className="ml-2 w-4 h-4" />
+                  Subscribe to Newsletter <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </div>
             </div>

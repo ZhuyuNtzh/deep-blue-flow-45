@@ -49,30 +49,30 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 inline-flex items-center rounded-full bg-flux-50 px-3 py-1 text-sm font-medium text-flux-800 animate-fade-in">
             <span className="flex h-2 w-2 rounded-full bg-flux-500 mr-2"></span>
-            Introducing Flux — The Next Generation Data Platform
+            AI-Powered Solutions for Small Businesses
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 animate-fade-up text-balance">
-            Transform your data workflow with
-            <span className="text-gradient"> intelligence</span>
+            Boost Productivity & Profits with
+            <span className="text-gradient"> AI-Powered Automation</span>
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0 animation-delay-100 text-balance">
-            Streamline your data ingestion, transformation, and analysis with our all-in-one platform designed for modern teams.
+            We help small businesses scale smarter with AI and automation solutions tailored for efficiency.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 animation-delay-200">
             <Link
-              to="/contact"
+              to="/book-call"
               className="px-6 py-3 rounded-lg bg-flux-800 text-white font-medium hover:bg-flux-700 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
             >
-              Get Started Free
+              Start Working Smarter
             </Link>
             <Link
-              to="/features"
+              to="/services"
               className="px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
             >
-              See Features <ArrowRight className="ml-2 w-4 h-4" />
+              Our Services <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -91,14 +91,14 @@ const Hero = () => {
               <div className="p-6 h-full overflow-hidden bg-gray-900 text-gray-300 text-sm font-mono flex flex-col">
                 <div className="flex items-center mb-4">
                   <span className="text-green-400">$</span>
-                  <span className="ml-2 animate-pulse-slow">flux connect --source api --destination warehouse</span>
+                  <span className="ml-2 animate-pulse-slow">automateX --workflow="customer_outreach" --execute</span>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-blue-400">✓ Connection established</div>
-                  <div className="text-blue-400">✓ Schema validated</div>
-                  <div className="text-blue-400">✓ Data transformation applied</div>
-                  <div className="text-blue-400">✓ Warehouse synchronized</div>
-                  <div className="text-green-400 mt-4">✓ Process completed successfully</div>
+                  <div className="text-blue-400">✓ Connecting to CRM</div>
+                  <div className="text-blue-400">✓ Identifying customer segments</div>
+                  <div className="text-blue-400">✓ Generating personalized messages</div>
+                  <div className="text-blue-400">✓ Scheduling follow-ups</div>
+                  <div className="text-green-400 mt-4">✓ Workflow automated successfully</div>
                 </div>
               </div>
             </div>
