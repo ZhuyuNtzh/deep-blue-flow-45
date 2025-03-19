@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import ScrollAnimation from './ScrollAnimation';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -68,11 +69,11 @@ const Hero = () => {
             <span className="text-gradient"> AI-Powered Automation</span>
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl animate-fade-up opacity-0 animation-delay-100 text-balance">
+          <ScrollAnimation animation="fade-up" delay={100} className="text-xl text-gray-600 mb-8 max-w-3xl">
             We help small businesses scale smarter with AI and automation solutions tailored for efficiency.
-          </p>
+          </ScrollAnimation>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 animation-delay-200 mb-12">
+          <ScrollAnimation animation="fade-up" delay={200} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
               to="/book-call"
               className="px-6 py-3 rounded-lg bg-flux-800 text-white font-medium hover:bg-flux-700 transition-all duration-300 shadow-md hover:shadow-lg button-hover-effect"
@@ -85,10 +86,10 @@ const Hero = () => {
             >
               Our Services <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
-          </div>
+          </ScrollAnimation>
           
-          {/* Floating Dashboard - Using transition classes to ensure it stays visible */}
-          <div className="dashboard-element relative w-full max-w-5xl mx-auto animate-fade-up opacity-0 transition-opacity duration-1000">
+          {/* Floating Dashboard - Using ScrollAnimation for proper visibility */}
+          <ScrollAnimation animation="fade-up" delay={300} className="relative w-full max-w-5xl mx-auto">
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-flux-100 rounded-full opacity-60 blur-xl"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-flux-200 rounded-full opacity-50 blur-xl"></div>
             
@@ -138,7 +139,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </div>
