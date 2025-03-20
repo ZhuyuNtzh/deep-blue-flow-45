@@ -65,24 +65,24 @@ const Pricing = () => {
 
   const faqs = [
     {
-      question: "What's included in the Automation Strategy package?",
-      answer: "The Automation Strategy package includes a comprehensive analysis of your current workflows, identification of key automation opportunities, and a detailed implementation plan. We'll provide software recommendations, ROI calculations, and a roadmap for implementation."
+      question: "How can AI automation benefit my business?",
+      answer: "AI automation can significantly reduce manual tasks, increase efficiency, and provide data-driven insights. Our clients typically see a 30-40% reduction in operational costs and a 25% increase in productivity after implementing our AI solutions."
     },
     {
-      question: "How long does a typical automation project take?",
-      answer: "Most Built-out Projects take 2-6 weeks from kickoff to full implementation, depending on complexity and scope. Simple automations can be completed in as little as a week, while more complex, multi-system integrations may take longer."
+      question: "How long does it take to implement the AI Content Creation Assistant?",
+      answer: "The AI Content Creation Assistant can be set up within 48 hours. We'll need about 2-3 hours of your time to understand your brand voice and content needs, after which our system will learn your unique tone and be ready to create content."
     },
     {
-      question: "Do I need to be tech-savvy to use the automation solutions?",
-      answer: "No. We design all our automation solutions to be user-friendly and provide comprehensive training for your team. Once implemented, most automations require minimal technical knowledge to maintain and operate."
+      question: "Do I need technical knowledge to use the AutomateX platform?",
+      answer: "No technical knowledge required. Our AI dashboard is designed to be user-friendly with intuitive interfaces. We also provide comprehensive onboarding and training to ensure your team can maximize the value of our AI tools."
     },
     {
-      question: "Is there a minimum contract length for the Ongoing Management?",
-      answer: "The Ongoing Management package is typically an annual commitment, billed either annually or quarterly. This ensures we can properly plan and execute continuous improvements to your automation systems."
+      question: "Can your AI solutions integrate with my existing software?",
+      answer: "Yes. Our AI systems are built to integrate with most popular business tools including CRMs, email marketing platforms, social media management tools, and content management systems. We'll assess your current tech stack during the discovery phase."
     },
     {
-      question: "Can you integrate with our existing software?",
-      answer: "Yes. We specialise in integrating automation solutions with popular business software. During the discovery phase, we'll assess your current tech stack and design automations that work seamlessly with your existing tools."
+      question: "What kind of support do you provide after implementation?",
+      answer: "All our plans include ongoing technical support. The Built-out Projects and Customized Projects packages include 24/7 support, regular system updates, and monthly performance reviews to ensure your AI systems continue to deliver optimal results."
     }
   ];
 
