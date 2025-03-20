@@ -57,7 +57,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-gray-900">AutomateX</span>
             </Link>
             <p className="text-gray-600 mb-4 max-w-md">
-              AutomateX is the modern data platform that helps teams ingest, transform, and analyze data with unprecedented efficiency and simplicity.
+              AutomateX provides AI-powered automation solutions that help businesses streamline operations, create engaging content, generate quality leads, and deliver exceptional customer experiences.
             </p>
             <div className="flex space-x-4">
               <a
