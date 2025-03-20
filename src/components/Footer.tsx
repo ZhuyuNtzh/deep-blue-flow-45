@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Github, Twitter, Linkedin } from 'lucide-react';
@@ -12,8 +11,6 @@ const Footer = () => {
       links: [
         { href: '/features', label: 'Features' },
         { href: '/pricing', label: 'Pricing' },
-        { href: '/documentation', label: 'Documentation' },
-        { href: '/changelog', label: 'Changelog' },
       ],
     },
     {
@@ -28,9 +25,7 @@ const Footer = () => {
     {
       title: 'Resources',
       links: [
-        { href: '/documentation', label: 'Documentation' },
         { href: '/guides', label: 'Guides' },
-        { href: '/api', label: 'API Reference' },
         { href: '/community', label: 'Community' },
       ],
     },
