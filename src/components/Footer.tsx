@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Github, Twitter, Linkedin } from 'lucide-react';
@@ -49,10 +50,10 @@ const Footer = () => {
               <div className="h-8 w-8 rounded-md bg-gradient-to-br from-flux-700 to-flux-900 flex items-center justify-center text-white font-semibold text-sm mr-2">
                 AX
               </div>
-              <span className="text-xl font-bold text-gray-900">AutomateX</span>
+              <span className="text-xl font-bold text-gray-900">AegisAI</span>
             </Link>
             <p className="text-gray-600 mb-4 max-w-md">
-              AutomateX provides AI-powered automation solutions that help businesses streamline operations, create engaging content, generate quality leads, and deliver exceptional customer experiences.
+              AegisAI provides AI-powered automation solutions that help businesses streamline operations, create engaging content, generate quality leads, and deliver exceptional customer experiences.
             </p>
             <div className="flex space-x-4">
               <a
@@ -100,7 +101,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} AutomateX, Inc. All rights reserved.
+            © {currentYear} AegisAI, Inc. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-500 hover:text-flux-700 transition-colors text-sm">

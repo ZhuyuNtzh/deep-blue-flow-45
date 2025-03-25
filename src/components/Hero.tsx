@@ -133,7 +133,7 @@ const Hero = () => {
                 <div className="mt-4 flex items-center">
                   <div className="text-xs font-mono flex-1">
                     <span className="text-green-400">$</span>
-                    <span className="ml-2 animate-pulse-slow">automateX --workflow="client_outreach" --optimise</span>
+                    <span className="ml-2 animate-pulse-slow">aegisai --workflow="client_outreach" --optimise</span>
                   </div>
                   <div className="text-xs text-flux-400">System Active</div>
                 </div>

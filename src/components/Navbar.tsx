@@ -51,7 +51,7 @@ const Navbar = () => {
               <div className="h-8 w-8 rounded-md bg-gradient-to-br from-flux-800 to-flux-900 flex items-center justify-center text-white font-semibold text-sm">
                 AX
               </div>
-              AutomateX
+              AegisAI
             </span>
           </Link>
 
