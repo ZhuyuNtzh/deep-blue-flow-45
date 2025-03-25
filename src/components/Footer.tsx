@@ -47,9 +47,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
             <Link to="/" className="inline-flex items-center mb-4">
-              <div className="h-8 w-8 rounded-md bg-gradient-to-br from-flux-700 to-flux-900 flex items-center justify-center text-white font-semibold text-sm mr-2">
-                AX
-              </div>
+              <img 
+                src="/lovable-uploads/b23eecf8-fbe0-41a0-88d6-4c699f4f913d.png" 
+                alt="AegisAI Logo" 
+                className="h-10 w-10 mr-2" 
+              />
               <span className="text-xl font-bold text-gray-900">AegisAI</span>
             </Link>
             <p className="text-gray-600 mb-4 max-w-md">

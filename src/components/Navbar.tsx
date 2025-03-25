@@ -48,10 +48,12 @@ const Navbar = () => {
             className="text-2xl font-bold text-flux-900 transition-opacity duration-200 hover:opacity-80"
           >
             <span className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-md bg-gradient-to-br from-flux-800 to-flux-900 flex items-center justify-center text-white font-semibold text-sm">
-                AX
-              </div>
-              AegisAI
+              <img 
+                src="/lovable-uploads/b23eecf8-fbe0-41a0-88d6-4c699f4f913d.png" 
+                alt="AegisAI Logo" 
+                className="h-10 w-10"
+              />
+              <span>AegisAI</span>
             </span>
           </Link>
 
