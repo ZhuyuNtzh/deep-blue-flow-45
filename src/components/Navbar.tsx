@@ -49,11 +49,11 @@ const Navbar = () => {
           >
             <span className="flex items-center gap-2">
               <img 
-                src="/lovable-uploads/b23eecf8-fbe0-41a0-88d6-4c699f4f913d.png" 
-                alt="AegisAI Logo" 
+                src="/lovable-uploads/8fb76758-ceea-4186-b92b-64fc18c1e497.png" 
+                alt="ByteRocket Logo" 
                 className="h-10 w-10"
               />
-              <span>AegisAI</span>
+              <span>ByteRocket</span>
             </span>
           </Link>
 

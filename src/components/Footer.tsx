@@ -48,14 +48,14 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="inline-flex items-center mb-4">
               <img 
-                src="/lovable-uploads/b23eecf8-fbe0-41a0-88d6-4c699f4f913d.png" 
-                alt="AegisAI Logo" 
+                src="/lovable-uploads/8fb76758-ceea-4186-b92b-64fc18c1e497.png" 
+                alt="ByteRocket Logo" 
                 className="h-10 w-10 mr-2" 
               />
-              <span className="text-xl font-bold text-gray-900">AegisAI</span>
+              <span className="text-xl font-bold text-gray-900">ByteRocket</span>
             </Link>
             <p className="text-gray-600 mb-4 max-w-md">
-              AegisAI provides AI-powered automation solutions that help businesses streamline operations, create engaging content, generate quality leads, and deliver exceptional customer experiences.
+              ByteRocket provides AI-powered automation solutions that help businesses streamline operations, create engaging content, generate quality leads, and deliver exceptional customer experiences.
             </p>
             <div className="flex space-x-4">
               <a
@@ -103,7 +103,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} AegisAI, Inc. All rights reserved.
+            © {currentYear} ByteRocket, Inc. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-500 hover:text-flux-700 transition-colors text-sm">
